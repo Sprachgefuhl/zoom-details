@@ -1,0 +1,105 @@
+:root {
+  --background: #eee;
+  --primary: #000;
+  --accent: #fcbb51;
+}
+
+.dark-mode {
+  --background: #2e2d2e;
+  --primary: #ccc;
+  --accent: #1d3a5f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin-bottom: 100px;
+  background-color: var(--background);
+  font-family: 'Abel';
+}
+
+.create-container,
+.edit-container {
+  width: 300px;
+  height: 230px;
+  padding: 15px;
+  color: var(--primary);
+  background-color: transparent;
+  border: 3px solid var(--primary);
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.create-container label,
+.edit-container label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.create-container input,
+.edit-container input {
+  width: 190px;
+  margin-bottom: 5px;
+  color: var(--primary);
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+  font-size: 16px;
+  caret-color: var(--primary);
+}
+
+.create-container input:focus,
+.edit-container input:focus {
+  outline-style: none;
+}
+
+.create-container #zoom::placeholder {
+  color: var(--primary);
+  font-size: 15px;
+  font-weight: bold;
+  opacity: 0.5;
+}
+
+.create-container button,
+.edit-container button {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 15px;
+  padding: 3px;
+  color: var(--primary);
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.create-container button:hover,
+.edit-container button:hover {
+  /* background-color: var(--accent); */
+  border: 2px solid rgb(92, 136, 27);
+  color: rgb(92, 136, 27);
+}
+
+.edit-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#back {
+  all: unset;
+}
+
+#back:hover {
+  color: rgb(92, 136, 27);
+}
+
+.fa-arrow-left {
+  margin-top: 15px;
+}

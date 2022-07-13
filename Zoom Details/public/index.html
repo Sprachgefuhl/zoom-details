@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/49042efa96.js" crossorigin="anonymous"></script>
+  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/details.css">
+  <link rel="stylesheet" href="css/tags.css">
+  <link rel="stylesheet" href="css/dark-mode.css">
+  <title>Zoom Details</title>
+</head>
+
+<body>
+  <header>
+    <input type="text" id="filter" placeholder="Filter">
+    <h2>Found: <span id="found"></span></h2>
+  </header>
+
+  <div class="details-container"></div>
+
+  <div class="toggle-container">
+    <input type="checkbox" class="checkbox" id="checkbox">
+    <label for="checkbox" class="label">
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+      <div class="ball"></div>
+    </label>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="js/darkMode.js"></script>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCf7G2o5jzU85fMKMWD_lWQyM0CL1zBWrg",
+      authDomain: "zoom-details-40112.firebaseapp.com",
+      projectId: "zoom-details-40112",
+      storageBucket: "zoom-details-40112.appspot.com",
+      messagingSenderId: "762124664484",
+      appId: "1:762124664484:web:7207fdbf5074669ac6b031"
+    };
+
+    initializeApp(firebaseConfig);
+  </script>
+</body>
+
+</html>
